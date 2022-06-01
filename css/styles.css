@@ -2,28 +2,34 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Teko:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&
+family=Teko:wght@300&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap');
 
 :root {
-    --primary-font: 'Teko', sans-serif;
-    --secondary-font: 'Roboto Mono', monospace;
-    --primary-color: #64ffda;
-    --secondary-color: #0a192f;
-    --white: #fff;
-    --icon-color: #0a192f;
-    --nav-color: #ccd6f6;
-    --text-color: #8892b0;
+  --primary-font: 'Chakra Petch', sans-serif;
+  --secondary-font: 'Roboto Mono', monospace;
+  --primary-color: #64ffda;
+  --secondary-color: #0a192f;
+  --white: #fff;
+  --icon-color: #0a192f;
+  --nav-color: #ccd6f6;
+  --text-color: #8892b0;
 }
 
 /* Globales */
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 body {
   font-family: var(--primary-font);
@@ -43,9 +49,9 @@ body {
 }
 
 @media (min-width: 769px) {
-    .header__img {
-      position: fixed;
-    }
+  .header__img {
+    position: fixed;
+  }
 }
 
 .navbar {
@@ -104,13 +110,13 @@ body {
 }
 
 @media (min-width: 769px) {
-    .salute {
-      margin-left: 15rem;
-    }
+  .salute {
+    margin-left: 15rem;
+  }
 }
 
 .name {
-  font-size: 6rem;
+  font-size: 4rem;
   color: var(--white);
   margin-top: 0;
   margin-left: 4rem;
@@ -120,7 +126,7 @@ body {
 
 @media (min-width: 769px) {
   .name {
-    font-size: 9rem;
+    font-size: 6rem;
     margin-left: 15rem;
   }
 }
@@ -129,15 +135,15 @@ body {
   font-size: 3rem;
   font-weight: normal;
   color: var(--white);
-  margin-top: -3rem;
+  margin-top: -2rem;
   margin-left: 4rem;
 }
 
 @media (min-width: 769px) {
-    .profession {
-      font-size: 7rem;
-      margin-left: 15rem;
-    }
+  .profession {
+    font-size: 5rem;
+    margin-left: 15rem;
+  }
 }
 
 .main-text {
@@ -147,13 +153,15 @@ body {
   word-spacing: 0.2rem;
   letter-spacing: 0.1rem;
   padding-right: 1.5rem;
+  margin-top: 2rem;
 }
 
 @media (min-width: 769Px) {
-    .main-text {
-      font-size: 3rem;
-      margin-left: 15rem;
-    }
+  .main-text {
+    font-size: 2rem;
+    margin-left: 15rem;
+    margin-top: 1.5rem;
+  }
 }
 
 /* Social Media */
@@ -210,11 +218,12 @@ body {
   display: grid;
   place-items: center;
   text-decoration: none;
-  }
-  .float:hover {
+}
+
+.float:hover {
   color: #25d366;
   background-color: #fff;
-  }
+}
 
 /* Sections */
 
@@ -229,10 +238,10 @@ body {
 
 @media (min-width: 769px) {
   .about__title {
-      margin-top: 8.8rem;
-      padding-top: 2rem;
-      margin-left: 15rem;
-    }
+    margin-top: 5.5rem;
+    padding-top: 2rem;
+    margin-left: 15rem;
+  }
 }
 
 @media (min-width: 769px) {
@@ -246,12 +255,13 @@ body {
   font-size: 1.65rem;
   color: var(--nav-color);
   padding-right: 2rem;
+  margin-top: 1rem;
 }
 
 @media (min-width: 769px) {
   .about__text {
     font-family: var(--primary-font);
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--nav-color);
     margin-right: 5rem;
     margin-left: 15rem;
@@ -260,7 +270,7 @@ body {
 
 .btoro {
   color: var(--nav-color);
-  
+
 }
 
 .about__img {
@@ -278,18 +288,18 @@ body {
 
 @media (min-width: 769px) {
   .about__img {
-      width: 22rem;
-      margin-top: 2rem;
-      margin-right: 30rem;
-      opacity: 0.7;
-    }
+    width: 22rem;
+    margin-top: 2rem;
+    margin-right: 30rem;
+    opacity: 0.7;
+  }
 }
 
-  @media (min-width: 768px) {
-    .about__img:hover {
-      opacity: 1;
-    }
+@media (min-width: 768px) {
+  .about__img:hover {
+    opacity: 1;
   }
+}
 
 
 /* Projects */
@@ -330,7 +340,7 @@ body {
 }
 
 .pfolio__img {
-  width: 80%; 
+  width: 80%;
   border: solid var(--primary-color);
   border-radius: 2rem;
   padding: 0.5rem;
@@ -340,13 +350,13 @@ body {
 
 @media (min-width: 769px) {
   .pfolio__img {
-  width: 100%; 
-  height: 105%;
-  margin: 1rem;
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-  opacity: 0.7;
-  } 
+    width: 100%;
+    height: 105%;
+    margin: 1rem;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    opacity: 0.7;
+  }
 }
 
 .pfolio__img:hover {
@@ -362,7 +372,7 @@ body {
 }
 
 .gally__img {
-  width: 80%; 
+  width: 80%;
   border: solid var(--primary-color);
   border-radius: 2rem;
   padding: 0.5rem;
@@ -372,13 +382,13 @@ body {
 
 @media (min-width: 769px) {
   .gally__img {
-  width: 100%; 
-  height: 105%;
-  margin: 1rem;
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-  opacity: 0.7;
-  } 
+    width: 100%;
+    height: 105%;
+    margin: 1rem;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    opacity: 0.7;
+  }
 }
 
 .gally__img:hover {
@@ -394,7 +404,7 @@ body {
 }
 
 .balanz__img {
-  width: 80%; 
+  width: 80%;
   border: solid var(--primary-color);
   border-radius: 2rem;
   padding: 0.5rem;
@@ -404,13 +414,13 @@ body {
 
 @media (min-width: 769px) {
   .balanz__img {
-  width: 100%; 
-  height: 105%;
-  margin: 1rem;
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-  opacity: 0.7;
-  } 
+    width: 100%;
+    height: 105%;
+    margin: 1rem;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    opacity: 0.7;
+  }
 }
 
 .balanz__img:hover {
@@ -426,7 +436,7 @@ body {
 }
 
 .fend__img {
-  width: 80%; 
+  width: 80%;
   border: solid var(--primary-color);
   border-radius: 2rem;
   padding: 0.5rem;
@@ -437,13 +447,13 @@ body {
 
 @media (min-width: 769px) {
   .fend__img {
-  width: 100%; 
-  height: 105%;
-  margin: 1rem;
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-  opacity: 0.7;
-  } 
+    width: 100%;
+    height: 105%;
+    margin: 1rem;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    opacity: 0.7;
+  }
 }
 
 .fend__img:hover {
@@ -454,7 +464,7 @@ body {
 
 /* Freelancer */
 .projects__freelancer {
-  width: 80%; 
+  width: 80%;
   border: solid var(--primary-color);
   border-radius: 2rem;
   padding: 0.5rem;
@@ -463,7 +473,7 @@ body {
 
 @media (min-width: 769px) {
   .projects__freelancer {
-    width: 100%; 
+    width: 100%;
     height: 105%;
     margin: 1rem;
     grid-column: 3 / 4;
@@ -485,7 +495,7 @@ body {
 }
 
 .viwallet__img {
-  width: 80%; 
+  width: 80%;
   border: solid var(--primary-color);
   border-radius: 2rem;
   padding: 0.5rem;
@@ -494,14 +504,14 @@ body {
 }
 
 @media (min-width: 769px) {
-    .viwallet__img {
-    width: 100%; 
+  .viwallet__img {
+    width: 100%;
     height: 105%;
     margin: 1rem;
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     opacity: 0.7;
-    }
+  }
 }
 
 .viwallet__img:hover {
@@ -517,7 +527,7 @@ body {
 }
 
 .shapes__img {
-  width: 80%; 
+  width: 80%;
   border: solid var(--primary-color);
   border-radius: 2rem;
   padding: 0.5rem;
@@ -526,17 +536,81 @@ body {
 }
 
 @media (min-width: 769px) {
-    .shapes__img {
-    width: 100%; 
+  .shapes__img {
+    width: 100%;
     height: 105%;
     margin: 1rem;
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     opacity: 0.7;
-    } 
+  }
 }
 
 .shapes__img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  transition: ease-in 0.3s;
+}
+
+/* Bank dApp */
+.projects__BdApp {
+  grid-row: 3 / 3;
+  grid-column: 2 / 3;
+}
+
+.BdApp__img {
+  width: 80%;
+  border: solid var(--primary-color);
+  border-radius: 2rem;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  margin-left: 10%;
+}
+
+@media (min-width: 769px) {
+  .BdApp__img {
+    width: 100%;
+    height: 105%;
+    margin: 1rem;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    opacity: 0.7;
+  }
+}
+
+.BdApp__img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  transition: ease-in 0.3s;
+}
+
+/* Meme Coin */
+.memeCoin__BdApp {
+  grid-row: 3 / 3;
+  grid-column: 2 / 3;
+}
+
+.memeCoin__img {
+  width: 80%;
+  border: solid var(--primary-color);
+  border-radius: 2rem;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  margin-left: 10%;
+}
+
+@media (min-width: 769px) {
+  .memeCoin__img {
+    width: 100%;
+    height: 105%;
+    margin: 1rem;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    opacity: 0.7;
+  }
+}
+
+.memeCoin__img:hover {
   opacity: 1;
   transform: scale(1.05);
   transition: ease-in 0.3s;
@@ -576,9 +650,9 @@ body {
 .hello__link {
   border: solid var(--primary-color);
   border-radius: 1rem;
-  padding: 2rem 5rem;
+  padding: 2rem 4rem;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--white) !important;
   text-decoration: none;
 }
