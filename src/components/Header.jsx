@@ -37,7 +37,7 @@ const Header = () => {
                 <li>
                     <a
                         className="list__link resume"
-                        href="https://drive.google.com/file/d/1GD3ijOnrrAIrb9ug20TtzA3GrXCvUQto/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1hIjT37DZFOWEC6Jee6davoG4GMKPRNvF/view?usp=sharing"
                         target="_blank"
                         >Resume</a>
                 </li>
