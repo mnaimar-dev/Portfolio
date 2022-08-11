@@ -14,7 +14,8 @@ const data = [
   {
     link: "https://balanz-mnaimar.netlify.app/",
     imgClass: "pfolio__img",
-    image: "../src/img/Balanz Web.png",
+    image:
+      "https://raw.githubusercontent.com/mnaimar-dev/Portfolio/main/src/img/Balanz%20Web.png",
     id: 3,
   },
   {
