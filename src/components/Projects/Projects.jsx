@@ -1,6 +1,5 @@
 import React from 'react'
 import { data } from '../../helpers/data'
-import'./Projects.css'
 
 
 const Projects = () => {
